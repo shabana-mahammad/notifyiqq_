@@ -6,7 +6,6 @@ const normalizeContext = require("../services/normalize");
 const { shouldNotify, isQuietHours, recentlyActive } = require("../services/evaluator");
 const decisionCache = require("../cache/decisionCache");
 
-// POST /api/notify
 router.post("/notify", (req, res) => {
   try {
     const contexts = req.body;
